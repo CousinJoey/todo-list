@@ -1,6 +1,22 @@
 
-const todayBtn = document.getElementById("today-container");
+const createProjectBtn = document.getElementById("add-project-container");
 
-todayBtn.addEventListener("click", (e) => {
-    console.log("you clicked it");
+createProjectBtn.addEventListener("click", (e) => {
+    popUp();
 });
+
+function popUp() {
+
+    const projectToggle = document.querySelector(".create-project-container")
+
+    projectToggle.style.display = "block";
+
+}
+
+const cancelBtn = document.getElementById("cancel")
+
+cancelBtn.addEventListener("click", (e) => {
+    const projectToggle = document.querySelector(".create-project-container")
+
+    projectToggle.style.display = "none";
+})

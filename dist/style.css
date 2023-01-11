@@ -33,6 +33,15 @@ nav {
     border-bottom: 2px solid black;
 }
 
+#home-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1em;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
 #today-container {
     display: flex;
     justify-content: start;
@@ -69,11 +78,12 @@ nav {
     border-bottom: 2px solid black;
 }
 
-.add-project-container {
+#add-project-container {
     display: flex;
     justify-content: start;
     align-items: center;
     gap: 1em;
+    cursor: pointer;
 }
 
 
@@ -81,4 +91,43 @@ main {
     grid-column: 2/-1;
     grid-row: 2/-1;
     background-color: red;
+}
+
+form {
+    display: grid;
+    grid-template:
+        "title title"
+        "author pages"
+        "haveRead haveRead"
+        "submitbtn submitbtn";
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.toggle-project {
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+.toggle-todo-item {
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+.create-todo-item {
+    display: none;
+    background-color: rgba(151, 151, 151, 0.6);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.create-project-container {
+    display: none;
+    background-color: rgba(151, 151, 151, 0.6);
+    padding: 10px;
+    border-radius: 8px;
 }
