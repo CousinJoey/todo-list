@@ -1,22 +1,4 @@
 
-const createProjectBtn = document.getElementById("add-project-container");
+import listeners from "./modules/DOM";
 
-createProjectBtn.addEventListener("click", (e) => {
-    popUp();
-});
-
-function popUp() {
-
-    const projectToggle = document.querySelector(".create-project-container")
-
-    projectToggle.style.display = "block";
-
-}
-
-const cancelBtn = document.getElementById("cancel")
-
-cancelBtn.addEventListener("click", (e) => {
-    const projectToggle = document.querySelector(".create-project-container")
-
-    projectToggle.style.display = "none";
-})
+listeners();

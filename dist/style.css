@@ -125,7 +125,7 @@ form {
     border-radius: 8px;
 }
 
-.create-project-container {
+#create-project-container {
     display: none;
     background-color: rgba(151, 151, 151, 0.6);
     padding: 10px;
